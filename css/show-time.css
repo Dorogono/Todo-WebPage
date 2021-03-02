@@ -1,0 +1,17 @@
+.clock {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.time-Btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

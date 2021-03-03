@@ -1,17 +1,20 @@
+.ampm,
+.clock {
+  display: block;
+  font-size: 100px;
+  color: var(--black-color);
+  width: 450px;
+  height: 150px;
+}
+
 .clock {
   display: none;
 }
 
 .showing {
-  display: block;
+  display: flex;
 }
 
 .hidden {
   display: none;
-}
-
-.time-Btn {
-  position: fixed;
-  right: 0;
-  bottom: 0;
 }

@@ -16,16 +16,23 @@
         <span class="clock"></span>
       </div>
 
-      <input type="button" class="time-Btn" />
+      <input type="checkbox" class="time-Btn" id="toggle" />
+      <label for="toggle" class="toggle-label">
+        <div class="switchbox">
+          <span class="hour-first hour-style">24h</span>
+          <span class="hour-second hour-style">12h</span>
+          <span class="circle"></span>
+        </div>
+      </label>
 
       <div class="greeting-wrap">
-        <form class="greeting-form">
-          <input type="text" placeholder="What is your name?" />
-        </form>
         <div class="greeting-text-wrap">
           <span class="greeting-text-ampm"></span>
           <span class="greeting-text-name"></span>
         </div>
+        <form class="greeting-form">
+          <input type="text" placeholder="What is your name?" class="askName" />
+        </form>
       </div>
 
       <div class="weather"></div>
@@ -35,8 +42,10 @@
       <form class="todo-form">
         <input type="text" placeholder="Write a today's task." />
       </form>
+      <ul class="todo-List"></ul>
     </div>
 
     <script src="js/show-time.js"></script>
+    <script src="js/greeting.js"></script>
   </body>
 </html>

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+@import "reset.css";
+@import "var.css";
+
+@import "css/first-row.css";
 @import "css/show-time.css";
+@import "css/checkbox.css";
+@import "css/greeting.css";
 
 body {
   font-family: "Quicksand", sans-serif;

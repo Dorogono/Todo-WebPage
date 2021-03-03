@@ -1,0 +1,46 @@
+.time-Btn {
+  display: none;
+}
+.toggle-label {
+  cursor: pointer;
+  position: fixed;
+}
+
+.switchbox {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  background-color: var(--black-color);
+  border-radius: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+  position: absolute;
+  right: 30px;
+  transition: all 0.8s ease-out;
+}
+
+.hour-second {
+  font-size: 15px;
+  color: var(--yellow-color);
+  position: absolute;
+  left: 3px;
+}
+
+.hour-first {
+  position: absolute;
+  right: 3px;
+  font-size: 15px;
+  color: var(--yellow-color);
+}
+
+#toggle:checked ~ .toggle-label .switchbox .circle {
+  transform: translateX(28px);
+}

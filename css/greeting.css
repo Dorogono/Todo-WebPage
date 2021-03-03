@@ -1,0 +1,29 @@
+.askName,
+.greeting-text-name {
+  display: none;
+}
+
+.askName {
+  padding: 10px;
+  font-size: 40px;
+  border: none;
+}
+
+.askName:focus {
+  outline: none;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.greeting-text-wrap {
+  font-size: 60px;
+  color: var(--black-color);
+}
+
+.greeting-text-name {
+  display: flex;
+  justify-content: center;
+}
+
+.showing {
+  display: flex;
+}

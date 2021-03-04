@@ -70,6 +70,7 @@ function loadCoords(){
 
 function init(){
     loadCoords();
+    setInterval(loadCoords, 1000);
 }
 
 init();

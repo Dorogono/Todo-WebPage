@@ -9,7 +9,6 @@ const countryText = weather.querySelector(".country");
 const temperature = weather.querySelector(".temperature");
 const weatherIcon = weather.querySelector(".weather-icon");
 const weatherDes = weather.querySelector(".weather-text");
-const minMaxTemp = weather.querySelector(".temperature-second");
 const iconPic = weatherIcon.querySelector(".icon-pic");
 const tempIcon = temperature.querySelector(".temperature-icon");
 const temperatureMain = temperature.querySelector(".temperature-main");
@@ -22,8 +21,6 @@ function getWeather(lat, lon){
         const city = json.name;
         const country = json.sys.country;
         const mainTemp = json.main.temp;
-        const minTemp = json.main.temp_min;
-        const maxTemp = json.main.temp_max;
         const weatherText = json.weather[0].main;
         const icon = json.weather[0].icon;
 
@@ -34,7 +31,6 @@ function getWeather(lat, lon){
         tempIcon.innerHTML = `℃`;
         iconPic.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
         weatherDes.innerText = weatherText;
-        minMaxTemp.innerText = `Min : ${minTemp} / Max : ${maxTemp}`;
     })
 }
 

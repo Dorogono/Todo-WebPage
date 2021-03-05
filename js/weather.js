@@ -1,6 +1,8 @@
 const weather = document.querySelector(".weather");
 const API_KEY = "962dd8da2d2bd79354227bbba9c679ec";
 const coords = 'coords';
+const showingClassInWeather = 'showing';
+const hiddenClassInWeather = 'hidden';
 
 const cityText = weather.querySelector(".city");
 const countryText = weather.querySelector(".country");
@@ -25,6 +27,7 @@ function getWeather(lat, lon){
         const weatherText = json.weather[0].main;
         const icon = json.weather[0].icon;
 
+        tempIcon.classList.add(showingClassInWeather);
         cityText.innerText = city;
         countryText.innerText = country;
         temperatureMain.innerText = mainTemp;
@@ -46,6 +49,7 @@ function callGeoSuccess(position){
         latitude,
         longitude
     };
+    
     saveCoords(coordsObj);
     getWeather(latitude, longitude);
 }
@@ -56,6 +60,7 @@ function callGeoError(){
 
 function askCoords(){
     navigator.geolocation.getCurrentPosition(callGeoSuccess, callGeoError);
+    tempIcon.classList.add(hiddenClassInWeather);
 }
 
 function loadCoords(){
@@ -70,7 +75,6 @@ function loadCoords(){
 
 function init(){
     loadCoords();
-    setInterval(loadCoords, 1000);
 }
 
 init();

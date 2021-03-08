@@ -1,5 +1,6 @@
 .askName,
-.greeting-text-name {
+.greeting-text-name,
+.greeting-time {
   display: none;
 }
 
@@ -15,13 +16,11 @@
 }
 
 .greeting-text-wrap {
-  font-size: 60px;
+  font-size: 40px;
   color: var(--black-color);
-}
-
-.greeting-text-name {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .showing {

@@ -3,7 +3,6 @@ const clock = showTime.querySelector(".clock");
 const ampm = showTime.querySelector(".ampm");
 const timeBtn = document.querySelector("input");
 
-
 timeBtn.value = "";
 
 const timeShow = "showing";

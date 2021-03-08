@@ -3,8 +3,6 @@
   display: block;
   font-size: 100px;
   color: var(--black-color);
-  width: 450px;
-  height: 150px;
 }
 
 .clock {

@@ -2,9 +2,10 @@ const greetInputWrap = document.querySelector(".greeting-wrap");
 const greetForm = greetInputWrap.querySelector(".greeting-form");
 const greetInput = greetForm.querySelector("input");
 const greetingTextName = document.querySelector(".greeting-text-name");
+const greetingTime = document.querySelector(".greeting-time");
 const showingClass = "showing";
 const Name_LS = "name";
-const greetingTime = document.querySelector(".greeting-time");
+
 
 function saveName(text){
     localStorage.setItem(Name_LS, text);
@@ -26,21 +27,23 @@ function askName(){
 function paintText(text){
     greetInput.classList.remove(showingClass);
     greetingTextName.classList.add(showingClass);
+    greetingTime.classList.add(showingClass);
 
     greetingTextName.innerText = text;
 }
 
 function paintGreetTime(){
     const date = new Date();
-    const hourTime = date.getHours();
-    if(0 <= hourTime <7){
-        greetingTime.innerText = `Good Night,`;
-    } if( 6 < hourTime < 12){
+    const greetingHour = date.getHours();
+
+    if (7 <= greetingHour && greetingHour < 12){
         greetingTime.innerText = `Good Morning,`;
-    } if(12 <= hourTime <18){
+    } else if (12 <= greetingHour && greetingHour < 18){
         greetingTime.innerText = `Good Afternoon,`;
-    } if(18 <= hourTime < 24){
+    } else if (18<= greetingHour && greetingHour <= 21){
         greetingTime.innerText = `Good Evening,`;
+    } else {
+        greetingTime.innerText = `Good Night,`;
     }
 }
 

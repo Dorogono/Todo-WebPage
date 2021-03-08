@@ -3,7 +3,11 @@
 }
 .toggle-label {
   cursor: pointer;
+  height: 30px;
   position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 10px 10px 0;
 }
 
 .switchbox {
@@ -24,7 +28,7 @@
   background-color: var(--yellow-color);
   position: absolute;
   right: 30px;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .hour-second {

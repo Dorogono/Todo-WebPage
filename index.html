@@ -10,52 +10,60 @@
     </style>
   </head>
   <body>
-    <div class="first-row">
-      <div class="show-time">
-        <span class="ampm"></span>
-        <span class="clock"></span>
+    <div class="whole">
+      <div class="first-row">
+        <div class="first-row-first">
+          <div class="show-time">
+            <span class="clock"></span>
+            <span class="ampm"></span>
+          </div>
+
+          <input type="checkbox" class="time-Btn" id="toggle" />
+          <label for="toggle" class="toggle-label">
+            <div class="switchbox">
+              <span class="hour-first hour-style">24h</span>
+              <span class="hour-second hour-style">12h</span>
+              <span class="circle"></span>
+            </div>
+          </label>
+
+          <div class="greeting-wrap">
+            <div class="greeting-text-wrap">
+              <span class="greeting-time"></span>
+              <span class="greeting-text-name"></span>
+            </div>
+            <form class="greeting-form">
+              <input
+                type="text"
+                placeholder="What is your name?"
+                class="askName"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="weather">
+          <div class="location">
+            <span class="city"></span>
+            <span class="country"></span>
+          </div>
+          <div class="temperature">
+            <span class="temperature-main"></span>
+            <span class="temperature-icon">℃</span>
+          </div>
+          <div class="weather-description">
+            <span class="weather-icon"><img class="icon-pic" /></span>
+            <span class="weather-text"></span>
+          </div>
+        </div>
       </div>
 
-      <input type="checkbox" class="time-Btn" id="toggle" />
-      <label for="toggle" class="toggle-label">
-        <div class="switchbox">
-          <span class="hour-first hour-style">24h</span>
-          <span class="hour-second hour-style">12h</span>
-          <span class="circle"></span>
-        </div>
-      </label>
-
-      <div class="greeting-wrap">
-        <div class="greeting-text-wrap">
-          <span class="greeting-time"></span>
-          <span class="greeting-text-name"></span>
-        </div>
-        <form class="greeting-form">
-          <input type="text" placeholder="What is your name?" class="askName" />
+      <div class="todo-wrap">
+        <form class="todo-form">
+          <input type="text" placeholder="Write a today's task." />
         </form>
+        <ul class="todo-List"></ul>
       </div>
-
-      <div class="weather">
-        <div class="location">
-          <span class="city"></span>
-          <span class="country"></span>
-        </div>
-        <div class="temperature">
-          <span class="temperature-main"></span>
-          <span class="temperature-icon">℃</span>
-        </div>
-        <div class="weather-description">
-          <span class="weather-icon"><img class="icon-pic" /></span>
-          <span class="weather-text"></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="todo-wrap">
-      <form class="todo-form">
-        <input type="text" placeholder="Write a today's task." />
-      </form>
-      <ul class="todo-List"></ul>
     </div>
 
     <script src="js/show-time.js"></script>

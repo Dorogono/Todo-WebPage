@@ -1,0 +1,7 @@
+.second-row {
+  background-color: rgba(16, 24, 32, 0.3);
+  display: flex;
+  width: 800px;
+  height: 260px;
+  border-radius: 0 0 30px 30px;
+}

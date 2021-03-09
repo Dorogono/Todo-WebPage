@@ -1,0 +1,77 @@
+.todo-wrap {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-form {
+  text-align: center;
+}
+
+.todo-form input {
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--black-color);
+}
+
+.todo-form input:focus {
+  outline: none;
+}
+
+.todo-List::-webkit-scrollbar {
+  width: 5px;
+}
+
+.todo-List::-webkit-scrollbar-track-piece {
+  background-color: var(--yellow-color);
+}
+
+.todo-List::-webkit-scrollbar-thumb {
+  background-color: var(--black-color);
+}
+
+.todo-List {
+  width: 450px;
+  height: 170px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.todo-List li {
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(16, 24, 32, 0.3);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.todo-List span {
+  font-size: 30px;
+}
+
+.todo-List li button {
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  color: red;
+  margin-right: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.todo-List li button:hover {
+  transform: scale(2);
+}
+
+.todo-List li button:active {
+  outline: none;
+}

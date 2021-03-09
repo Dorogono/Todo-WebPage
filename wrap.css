@@ -7,6 +7,9 @@
 @import "css/checkbox.css";
 @import "css/greeting.css";
 @import "css/weather.css";
+@import "css/second-row.css";
+@import "css/calendar.css";
+@import "css/todo.css";
 
 body {
   font-family: "Quicksand", sans-serif;

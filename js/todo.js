@@ -25,10 +25,10 @@ function paintTodos(text){
     const li = document.createElement("li");
     const span = document.createElement("span");
     const delBtn = document.createElement("button");
-    delBtn.innerText = "❤";
+    delBtn.innerText = "✔";
     delBtn.addEventListener("click", deleteTodo);
     const newId = Math.ceil(Math.random()*99999);
-    span.innerText = text;
+    span.innerText = `- ${text}`;
     li.appendChild(span);
     li.appendChild(delBtn);
     todoList.appendChild(li);

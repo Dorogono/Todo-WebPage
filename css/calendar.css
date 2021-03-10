@@ -9,7 +9,9 @@
 .calendar-date {
   display: flex;
   font-size: 30px;
-  color: var(--black-color);
+  color: var(--yellow-color);
+  font-weight: 500;
+  margin-top: 15px;
 }
 
 .calendar-big {
@@ -29,10 +31,10 @@
   font-size: 95px;
   font-weight: 600;
   color: var(--yellow-color);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .calendar-big-week {
-  margin-top: 10px;
   font-size: 40px;
+  color: var(--yellow-color);
 }

@@ -10,6 +10,7 @@
 @import "css/second-row.css";
 @import "css/calendar.css";
 @import "css/todo.css";
+@import "css/bg.css";
 
 body {
   font-family: "Quicksand", sans-serif;

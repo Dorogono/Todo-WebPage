@@ -14,7 +14,12 @@
   font-size: 30px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid var(--black-color);
+  border-bottom: 1px solid var(--yellow-color);
+  color: var(--yellow-color);
+}
+
+.todo-form input::placeholder {
+  color: rgba(242, 170, 76, 0.5);
 }
 
 .todo-form input:focus {
@@ -41,13 +46,14 @@
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  color: var(--yellow-color);
 }
 
 .todo-List li {
   margin-left: 40px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(16, 24, 32, 0.3);
+  border-bottom: 1px solid rgba(242, 170, 76, 0.4);
   margin-bottom: 10px;
   padding: 5px;
 }
@@ -62,7 +68,7 @@
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   font-size: 20px;
-  color: red;
+  color: white;
   margin-right: 20px;
   position: relative;
   bottom: 10px;

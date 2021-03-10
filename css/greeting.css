@@ -9,14 +9,13 @@
   font-size: 40px;
   background-color: rgba(242, 170, 76, 0);
   border: none;
-  border-bottom: 1px solid rgba(242, 170, 76, 0);
+  border-bottom: 1px solid var(--black-color);
   position: relative;
   bottom: 70px;
 }
 
 .askName:focus {
   outline: none;
-  border-bottom: 1px solid var(--black-color);
 }
 
 .greeting-text-wrap {
@@ -25,6 +24,10 @@
   display: flex;
   height: 80px;
   align-items: center;
+}
+
+.greeting-text-name {
+  margin-left: 10px;
 }
 
 .showing {

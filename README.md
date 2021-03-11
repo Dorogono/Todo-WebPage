@@ -1,4 +1,5 @@
 # Todo-WebPage
-todo list + weather API
 
-It is a website that can write a todo list, and can see the weather.
+Link : https://dorogono.github.io/Todo-WebPage/
+
+This is a webpage with 'to do list' & 'weather' that based on your location that gets from 'openweathermap's API.'

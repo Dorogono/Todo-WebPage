@@ -29,7 +29,7 @@ function getWeather(lat, lon){
         countryText.innerText = country;
         temperatureMain.innerText = mainTemp;
         tempIcon.innerHTML = `℃`;
-        iconPic.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        iconPic.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         weatherDes.innerText = weatherText;
     })
 }
